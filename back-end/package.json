@@ -4,8 +4,14 @@
   "description": "Backend code challenge for Scoutbase",
   "main": "./src/index.ts",
   "scripts": {
+    "dev": "ts-node ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Christian Nazha",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.7.4",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
 }
