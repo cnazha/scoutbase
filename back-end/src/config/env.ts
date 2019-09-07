@@ -15,6 +15,7 @@ const env = process.env;
 export const {
     NODE_ENV = 'development',
     SERVER_PORT = 4000,
+    JWT_SECRET = 'KgC_;b4Hg]aUBB/Jz8[Kr~fh-)Dj=+@_cDy!"mr,d3sC[<@p4q',
 } = env;
 
 
