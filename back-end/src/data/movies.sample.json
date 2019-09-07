@@ -1,0 +1,31 @@
+[
+  {
+    "title": "focus",
+    "year": 2015,
+    "rating": 2.0,
+    "actors": [
+      {
+        "name": "Actor 1",
+        "birthday": "25-09-1994",
+        "country": "US"
+      },
+      {
+        "name": "Actor 2",
+        "birthday": "15-09-1994",
+        "country": "UK"
+      }
+    ],
+    "directors": [
+      {
+        "name": "Director 1",
+        "birthday": "25-09-1994",
+        "country": "US"
+      },
+      {
+        "name": "Director 2",
+        "birthday": "25-07-1994",
+        "country": "UK"
+      }
+    ]
+  }
+]
