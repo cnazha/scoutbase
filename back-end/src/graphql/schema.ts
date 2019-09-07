@@ -2,6 +2,8 @@ import { gql } from "apollo-server-express";
 
 const typeDefs = gql`
   
+  directive @isAuth on FIELD_DEFINITION
+  
   type Director {
     name: String!
     country: String!
@@ -20,6 +22,7 @@ const typeDefs = gql`
     rating: Float
     directors: [Director]!
     actors: [Actor]
+    scoutbase_rating: Float @isAuth
   }
   
   type User {
