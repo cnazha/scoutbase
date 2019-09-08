@@ -37,6 +37,8 @@ const typeDefs = gql`
 
   type Query {
     movies: [Movie]!
+    actors: [Actor!]!
+    directors: [Director!]!
   }
 
   type Mutation {
