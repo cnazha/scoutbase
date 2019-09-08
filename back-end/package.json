@@ -5,7 +5,11 @@
   "main": "./src/index.ts",
   "scripts": {
     "dev": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:rollback": "cd ./src/data && knex migrate:rollback --all",
+    "db:migrate": "cd ./src/data && knex migrate:latest",
+    "db:seed": "cd ./src/data && knex seed:run",
+    "db:init:dev": "yarn run db:rollback && yarn run db:migrate && yarn run db:seed"
   },
   "author": "Christian Nazha",
   "license": "ISC",
@@ -23,6 +27,8 @@
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "graphql": "^14.5.4",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.3",
+    "pg": "^7.12.1"
   }
 }
