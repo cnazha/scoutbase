@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-import path from "path";
+import * as path from "path";
 
 // Load ENV file based on runtime mode
 const env_file = path.resolve(process.cwd(), `.env.${process.env.NODE_ENV}`);
@@ -16,6 +16,7 @@ export const {
     NODE_ENV = 'development',
     SERVER_PORT = 4000,
     JWT_SECRET = 'KgC_;b4Hg]aUBB/Jz8[Kr~fh-)Dj=+@_cDy!"mr,d3sC[<@p4q',
+    DB_PG_URL
 } = env;
 
 
