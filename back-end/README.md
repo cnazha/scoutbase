@@ -23,7 +23,7 @@ git clone https://github.com/cnazha/scoutbase.git <project_name>
 ```
 - Install dependencies
 ```
-cd <project_name>
+cd <project_name>/back-end
 yarn
 ```
 - Create a .env.development from .env.sample
