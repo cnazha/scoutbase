@@ -5,7 +5,7 @@
   "main": "./src/index.ts",
   "scripts": {
     "dev": "nodemon",
-    "test": "mocha -r ts-node/register ./src/**/*.spec.ts",
+    "test": "NODE_ENV=development mocha -r ts-node/register ./src/**/*.spec.ts",
     "db:rollback": "cd ./src/data && knex migrate:rollback --all",
     "db:migrate": "cd ./src/data && knex migrate:latest",
     "db:seed": "cd ./src/data && knex seed:run",
